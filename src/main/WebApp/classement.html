@@ -1,0 +1,99 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classement</title>
+    <script src="tri.js" async></script> <!-- Récupérer le score des joueurs et ensuite les classer -->
+    <style>
+        table{border-collapse: collapse}
+        th,td{border: 1px solid black;padding: 10px 20px}
+    </style>
+</head>
+<body>
+
+<!-- Classement manuel des joueurs -->
+<table>
+    <thead>
+    <tr>
+        <th>UserID</th>
+        <th>Score</th>
+        <!-- <th>Position</th> -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Ork</td>
+        <td>20</td>
+        <!-- <td>1</td> -->
+    </tr>
+    <tr>
+        <td>JJ</td>
+        <td>19</td>
+       <!-- <td>2</td> -->
+    </tr>
+    <tr>
+        <td>Scurry</td>
+        <td>18</td>
+        <!-- <td>3</td> -->
+    </tr>
+    <tr>
+        <td>Jbutler</td>
+        <td>17</td>
+        <!-- <td>4</td> -->
+    </tr>
+    </tbody>
+</table>
+</body>
+<!--<p>Fin de partie ! </p>-->
+<form>
+    <p>Fin de partie ! </p>
+    <br>
+    <br>
+    <br>
+    <center><input type="button" value="Rejouer!"></center>
+
+
+</form>
+<br>
+
+<script>
+
+    var btn = document.querySelector('input');
+    var txt = document.querySelector('p');
+
+    btn.addEventListener('click', updateBtn);
+
+    function updateBtn() {
+        if (btn.value === 'Rejouer') {
+            btn.value = 'Fin de partie !';
+            txt.textContent = 'Lancement de la nouvelle partie !';
+        } else {
+            btn.value = 'Rejouer';
+            txt.textContent = 'Fin de partie !';
+        }
+    }
+</script>
+
+
+
+
+<footer class='footerbottom'>
+
+    <center><div> class='contentfooter'>Copyright &#169; 2020 MWAMBA Jean-Jules and KOUADIO Olivier| <a href='https://www.linkedin.com/feed/'> Contactez-nous !</a> </div></center>
+</footer>
+</html>
